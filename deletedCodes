@@ -1,0 +1,819 @@
+/* from Events page
+ html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: linear-gradient(142deg, rgba(32, 6, 91, 1) 0%, rgba(98, 39, 90, 1) 100%);
+    height: 100%;
+    margin: 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Cairo', sans-serif;
+    
+  }
+
+  footer .col-md-7 {
+    border-left: 1.2px solid white;
+    opacity: 60%;
+  }
+
+  .nav-bar-button {
+    color: white !important;
+    position: absolute;
+    top: -2.6rem !important;
+    left: 0;
+    border: none;
+    padding: 3px;
+  }
+
+  .nav-bar-button .fa-bars {
+    font-size: 2rem;
+    color: white !important;
+  }
+
+  .header {
+    padding: 2%;
+    text-align: center;
+    color: white;
+  }
+
+  #tabs {
+    margin-top: -5%;
+    padding: 0.5%;
+  }
+
+  #tabs .nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    margin: 3px;
+
+  }
+
+  #tabs a:hover {
+    opacity: 70%;
+    background-color: #ffffff;
+    color: #3E2960;
+  }
+
+  #bcground {
+    background-image: url(https://i.postimg.cc/Hxtrg3x6/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    padding-bottom: 10%;
+    margin: 0;
+  }
+*/
+/*
+  footer {
+    position: absolute;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .footer {
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  .navbar-toggler-fa {
+    position: relative;
+    bottom: 4%;
+  }
+
+  .col-md-7 .location,
+  .col-md-7 .socialIcons a {
+    margin-top: 1.6rem;
+  }
+
+  .padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .padding-3 {
+    padding: 3px;
+  }
+
+  .socialIcons,
+  .socialIcons a {
+    padding: 1%;
+  }
+
+  .socialIcons a:hover {
+    opacity: 70%;
+  }
+
+  #footer {
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color: #B4A3B9;
+  }
+
+  #footer h6 {
+    font-size: 20px;
+  }
+  */
+  /*
+  #xxsmall {
+    display: none;
+  }
+
+  @media (max-width: 476px) {
+    .header_logo {
+      width: 80%;
+    }
+
+    #club-name {
+      display: none !important;
+    }
+
+    #extra-small {
+      display: none;
+    }
+
+    #xxsmall {
+      display: block;
+    }
+
+    #xxsmall img {
+      float: right;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 236px) {
+    #xxsmall img {
+      width: 60px;
+      height: 40px;
+    }
+  }
+    /*@media (max-width: 474px) {
+   
+    .header_logo {
+      width: 80%;
+    }
+  }*/
+  @media (max-width: 767px) {
+
+    /*md*/
+    
+    html {
+      font-size: 80% !important;
+    }
+
+    footer .col-md-7 {
+      border-left: none;
+    }
+
+    #footer {
+      font-size: 92%;
+    }
+
+    #footer img {
+      width: 25px;
+      height: 25px;
+    }
+
+    #footer h6 {
+      font-size: 96%;
+      margin-top: 5px;
+    }
+  
+
+    .underline {
+      border-bottom: 1px solid grey;
+      width: 100%;
+    }
+
+    .navbar-collapse .fa {
+      font-size: 2rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .navbar-collapse .nav-links-collapse {
+      margin-top: 2.5rem;
+    }
+
+    .nav-link {
+      color: black !important;
+      padding: 8% !important;
+      margin-top: 2.1rem;
+      font-size: 16px !important;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    #tabs .nav-link {
+      width: 6rem;
+      border-radius: 10px;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding-top: 10% !important;
+      padding-right: 10%;
+      line-height: 1.3rem;
+      padding-left: 20% !important;
+      height: 100%;
+      background: white !important;
+      font-size: 1.2rem;
+      z-index: 5;
+    }
+
+    .navbar-collapse.collapsing {
+      height: 100%;
+      right: -75%;
+      transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+      right: 0;
+      transition: right 400ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+      transition: right 400ms ease-in;
+    }
+
+  }*/
+
+  FROM ACHIEVEMENTS
+
+   @media (min-width: 767.0px) and (max-width: 767.9px) {
+
+    .navbar-collapse .fa {
+      font-size: 0rem;
+    }
+
+    #tabs .nav-link {
+      width: 7rem;
+    }
+
+    .navbar-collapse .nav-link {
+      text-align: center;
+      position: relative;
+      top: -1rem;
+    }
+    footer .col-md-7 {
+      border-left: none;
+    }
+
+  }
+
+  @media (max-width: 767px) {
+
+    /*md*/
+    html {
+      font-size: 80% !important;
+    }
+
+    footer .col-md-7 {
+      border-left: none;
+    }
+
+    #footer {
+      font-size: 92%;
+    }
+
+    #footer img {
+      width: 25px;
+      height: 25px;
+    }
+
+    #footer h6 {
+      font-size: 96%;
+      margin-top: 5px;
+    }
+
+    .underline {
+      border-bottom: 1px solid grey;
+      width: 100%;
+    }
+
+    .navbar-collapse .fa {
+      font-size: 2rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .navbar-collapse .nav-links-collapse {
+      margin-top: 2.5rem;
+    }
+
+    .nav-link {
+      color: black !important;
+      padding: 8% !important;
+      margin-top: 2.1rem;
+      font-size: 16px !important;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    #tabs .nav-link {
+      width: 6rem;
+      border-radius: 10px;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding-top: 10% !important;
+      padding-right: 10%;
+      line-height: 1.3rem;
+      padding-left: 20% !important;
+      height: 100%;
+      background: white !important;
+      font-size: 1.2rem;
+      z-index: 5;
+    }
+
+    .navbar-collapse.collapsing {
+      height: 100%;
+      right: -75%;
+      transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+      right: 0;
+      transition: right 400ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+      transition: right 400ms ease-in;
+    }
+  }
+
+  /*
+  footer {
+    position: absolute;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .footer {
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  .navbar-toggler-fa {
+    position: relative;
+    bottom: 4%;
+  }
+
+  .col-md-7 .location,
+  .col-md-7 .socialIcons a {
+    margin-top: 1.6rem;
+  }
+
+  .padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .socialIcons,
+  .socialIcons a {
+    padding: 1%;
+  }
+
+  .socialIcons a:hover {
+    opacity: 70%;
+  }
+
+  #footer {
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color: #B4A3B9;
+  }
+
+  #footer h6 {
+    font-size: 20px;
+  }
+
+  #xxsmall {
+    display: none;
+  }
+
+  @media (max-width: 476px) {
+    .header_logo {
+      width: 80%;
+    }
+
+    #club-name {
+      display: none !important;
+    }
+
+    #extra-small {
+      display: none;
+    }
+
+    #xxsmall {
+      display: block;
+    }
+
+    #xxsmall img {
+      float: right;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 236px) {
+    #xxsmall img {
+      width: 60px;
+      height: 40px;
+    }
+  }
+*/
+/* html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: linear-gradient(142deg, rgba(32, 6, 91, 1) 0%, rgba(98, 39, 90, 1) 100%);
+    height: 100%;
+    margin: 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: cairo;
+  }
+
+  footer .col-md-7 {
+    border-left: 1.2px solid white;
+    opacity: 60%;
+  }
+
+  .nav-bar-button {
+
+    color: white !important;
+    position: absolute;
+    top: -2.6rem !important;
+    left: 0;
+    border: none;
+  }
+
+  .nav-bar-button .fa-bars {
+    font-size: 2rem;
+    color: white !important;
+  }
+
+  .header {
+    padding: 2%;
+    text-align: center;
+    color: white;
+  }
+
+  #tabs {
+    margin-top: -5%;
+    padding: 0.5%;
+  }
+
+  #tabs .nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+}
+
+  #tabs a:hover {
+    opacity: 70%;
+    background-color: #ffffff;
+    color: #3E2960;
+  }
+
+  #bcground {
+    background-image: url(https://i.postimg.cc/Hxtrg3x6/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    padding-bottom: 10%;
+    margin: 0;
+  }*/
+
+  LEADERS PAGE
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: linear-gradient(142deg, rgba(32, 6, 91, 1) 0%, rgba(98, 39, 90, 1) 100%);
+    height: 100%;
+    margin: 0;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  footer .col-md-7 {
+    border-left: 1.2px solid white;
+    opacity: 60%;
+  }
+
+  .nav-bar-button {
+    color: white !important;
+    position: absolute;
+    top: -2.6rem !important;
+    left: 0;
+    border: none;
+  }
+
+  .nav-bar-button .fa-bars {
+    font-size: 2rem;
+    color: white !important;
+  }
+
+  .header {
+    padding: 2%;
+    text-align: center;
+    color: white;
+  }
+
+  #tabs {
+    margin-top: -5%;
+    padding: 0.5%;
+  }
+
+  #tabs .nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+
+  }
+
+  #tabs a:hover {
+    opacity: 70%;
+    background-color: #ffffff;
+    color: #3E2960;
+  }
+
+  #bcground {
+    background-image: url(https://i.postimg.cc/Hxtrg3x6/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    padding-bottom: 10%;
+    margin: 0;
+  }
+footer {
+    position: absolute;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .footer {
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  .navbar-toggler-fa {
+    position: relative;
+    bottom: 4%;
+  }
+
+  .col-md-7 .location,
+  .col-md-7 .socialIcons a {
+    margin-top: 1.6rem;
+  }
+
+  .padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .socialIcons,
+  .socialIcons a {
+    padding: 1%;
+  }
+
+  .socialIcons a:hover {
+    opacity: 70%;
+  }
+
+  #footer {
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    color: #B4A3B9;
+  }
+
+  #footer h6 {
+    font-size: 20px;
+  }
+  #xxsmall {
+    display: none;
+  }
+
+  @media (max-width: 476px) {
+    .header_logo {
+      width: 80%;
+    }
+
+    #club-name {
+      display: none !important;
+    }
+
+    #extra-small {
+      display: none;
+    }
+
+    #xxsmall {
+      display: block;
+    }
+
+    #xxsmall img {
+      float: right;
+      width: 50px;
+      height: 50px;;
+    }
+  }
+
+  @media (max-width: 236px) {
+    #xxsmall img {
+      width: 60px;
+      height: 40px;
+    }
+  }
+  @media (max-width: 474px) {
+
+    /*holds untill 474px*/
+    .header_logo {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 278px) {
+
+    /*holds untill 278px*/
+    .header_logo {
+      width: 90%;
+    }
+  }
+  @media (min-width: 767.0px) and (max-width: 767.9px) {
+
+    .navbar-collapse .fa {
+      font-size: 0rem;
+    }
+
+    #tabs .nav-link {
+      width: 7rem;
+    }
+
+    .navbar-collapse .nav-link {
+      text-align: center;
+      position: relative;
+      top: -1.4rem;
+    }
+    footer .col-md-7 {
+      border-left: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    /*md*/
+    html {
+      font-size: 80% !important;
+    }
+
+    footer .col-md-7 {
+      border-left: none;
+    }
+
+    #footer {
+      font-size: 92%;
+    }
+
+    #footer img {
+      width: 25px;
+      height: 25px;
+    }
+
+    #footer h6 {
+      font-size: 96%;
+      margin-top: 5px;
+    }
+
+    .underline {
+      border-bottom: 1px solid grey;
+      width: 100%;
+    }
+
+    .navbar-collapse .fa {
+      font-size: 2rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+      margin-bottom: 2rem;
+      color: grey !important;
+    }
+
+    .navbar-collapse .nav-links-collapse {
+      margin-top: 2.5rem;
+    }
+
+    .nav-link {
+      color: black !important;
+      padding: 8% !important;
+      margin-top: 2.1rem;
+      font-size: 16px !important;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    #tabs .nav-link {
+      width: 6rem;
+      border-radius: 10px;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding-top: 10% !important;
+      padding-right: 10%;
+      line-height: 1.3rem;
+      padding-left: 20% !important;
+      height: 100%;
+      background: white !important;
+      font-size: 1.2rem;
+      z-index: 5;
+    }
+
+    .navbar-collapse.collapsing {
+      height: 100%;
+      right: -75%;
+      transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+      right: 0;
+      transition: right 400ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+      transition: right 400ms ease-in;
+    }
+
+  }

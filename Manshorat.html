@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> المنشورات </title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/0j8L4rYF/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+
+<style>
+  
+  .content {
+    padding-top: 10%
+  }
+
+  .description,
+  .download-btn {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+  }
+
+  .content-side {
+    margin-top: 25%;
+    display: block;
+  }
+
+  .description {
+    text-align: right;
+    font-size: 1.4rem;
+  }
+
+  .download-btn,
+  .download-btn:hover,
+  .download-btn:active {
+    background-color: #DC4086;
+    border: none;
+    color: white;
+    padding: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: cairo;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 50%;
+    outline: none;
+    float: right;
+  }
+
+  
+
+  @media (max-width: 576px) {
+
+    .image-side,
+    .content-side {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 1.2rem !important;
+    }
+
+    .download-btn,
+    .download-btn:hover,
+    .download-btn:hover {
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.2rem !important;
+      width: 40%;
+      text-decoration: none;
+      
+    }
+  }
+
+  @media (max-width: 278px) {
+
+    /*holds untill 278px*/
+    .header_logo {
+      width: 90%;
+    }
+    .download-btn,
+    .download-btn:hover,
+    .download-btn:active {
+      width: 90%;
+      font-size: 10px !important;
+      height: 14%;
+    }
+
+    .description {
+      font-size: 13px !important;
+    }
+  }
+  @media (min-width: 767.0px) and (max-width: 767.9px) {
+
+    .navbar-collapse .fa {
+      font-size: 0rem;
+    }
+
+    #tabs .nav-link {
+      width: 7rem;
+    }
+
+    .navbar-collapse .nav-link {
+      text-align: center;
+      position: relative;
+      top: -1rem;
+    }
+    .content-side {
+      margin-top: 2%;
+    }
+
+    .description,
+    .download-btn {
+      font-size: 1.2rem;
+      line-height: 25px;
+    }
+    .download-btn{
+      width: 60%;
+    }
+    footer .col-md-7 {
+      border-left: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    .content-side {
+      margin-top: 2%;
+    }
+
+    .description,
+    .download-btn {
+      font-size: 1.1rem;
+      line-height: 25px;
+    }
+
+  }
+</style>
+
+<body onload="f()">
+  <header>
+    <div class="header">
+      <div class="container text-center d-none d-md-block d-xl-block d-lg-block blurred-elements">
+        <!-- large to md -->
+        <img class="header_pic d-inline-block align-top img-fluid" src="https://i.postimg.cc/P5CYZjpk/logos-header.png" />
+      </div>
+      <div class="container header_pic d-none d-sm-block d-md-none blurred-elements">
+        <!-- small -->
+        <div class="row text-center">
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/26cS2pvQ/club-logo.png" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-5">
+            <a href="#index"><img src="https://i.postimg.cc/90NzFDBw/club-name.png" class="img-fluid d-inline-block header_logo align-top" width="200" height="60"></a>
+          </div>
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/dtpDbT1z/ksu-logo.png" class="img-fluid d-inline-block header_logo align-top" width="50" height="60" /></a> <!-- better quality -->
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div class="container header_pic d-block d-sm-none blurred-elements">
+        <!-- extra small -->
+        <div class="row text-center" id="extra-small">
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/26cS2pvQ/club-logo.png" id="club-logo" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-5">
+            <a href="#index"><img src="https://i.postimg.cc/90NzFDBw/club-name.png" class="img-fluid d-inline-block header_logo align-top" width="200" height="60"></a>
+          </div>
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/dtpDbT1z/ksu-logo.png" class="img-fluid d-inline-block header_logo align-top" width="50" height="60" /></a> <!-- better quality -->
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div class="container header_pic blurred-elements" id="xxsmall">
+        <!-- extra small -->
+        <div class="row text-center">
+          <div class="col-11">
+            <a href="#index"><img src="https://i.postimg.cc/26cS2pvQ/club-logo.png" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div id="tabs">
+        <nav class="navbar navbar-expand-md navbar-light bg-custom text-center">
+          <a class="navbar-brand" href="#">
+          </a>
+          <button id="blurr" class="navbar-toggler nav-bar-button mr-auto float-left" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse bg-custom px-3 text-center" id="navbarCollapse">
+            <div class="close-btn">
+              <button id="blurr-close" class="navbar-toggler navbar-toggler-fa mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-times"></i></span>
+              </button>
+            </div>
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="index.html">الرئيسية</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link " href="events.html">الفعاليات</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link achievements-link" href="achievements.html">الإنجازات</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="leaders.html">قادة&nbsp;النادي</a> <!-- for it to look right in Ar-->
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" style="background-color: #EDEDED; color:#3E2960;" href="Manshorat.html">المنشورات</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <main class="blurred-elements">
+    <!-- background for all website -->
+    <div id="bcground">
+      <div class="container content">
+        <div class="row">
+          <div class="col-sm-6">
+            
+           <div class="image-side">
+            <embed src="mngm.pdf" type="application/pdf" width="100%" height="600px" />
+              <!--<img src="https://i.postimg.cc/Pqt9xgDk/mngm.png" class="img-fluid" width="70%" height="80%"> -->
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="content-side">
+              <p class="description">
+                <br/>
+                لإيماننا بأهمية نشر الفائدة <br />
+                و صُنع الأثر ; نقّبنا منجمًا وأودعنا <br />
+                فيه كنوز المنصّات المفيدة <br />
+                في مختلف الظروف
+              </p>
+            </div>
+            
+            <!--<a href="https://drive.google.com/file/d/1T5aJrLvqLLGoPx5I-qACH0iCFT8ANmaD/view?usp=sharing"><button class="download-btn">تصفح الكتيب</button></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--background-->
+  </main>
+
+  <footer>
+    <div class="container footer blurred-elements" id="footer">
+      <div class="row">
+        <div class="col-md-7">
+          <img class="socialIcons" src="assets/img/location-pin.svg">
+          الرياض - جامعة الملك سعود - كلية علوم الحاسب و تقنية المعلومات
+        </div>
+        <div class="col-md-5">
+          <h6>للتواصل معنا</h6>
+          <div class="socialIcons">
+            <a href="https://twitter.com/ksu_itclub?lang=ar"><img class="img-fluid" src="assets/img/squaretwitter.svg"></a>
+            <a href="https://www.linkedin.com/company/digital-minds-club-نادي-العقول-الرقمية/?originalSubdomain=sa"><img class="img-fluid" src="assets/img/linkedin-box.svg"></a>
+            <a href="https://www.instagram.com/ksu_itclub/r"><img class="img-fluid" src="assets/img/social-instagram.svg"></a>
+            <a href="mailto:digital.minds.ksu@gmail.com"><img class="img-fluid" src="assets/img/reademail.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    var flag = 1;
+    //when button clicked 1st time => blurr, 2nd time => no blurr
+    $("#blurr").click(function() {
+      if (flag % 2 != 0) {
+        $('.blurred-elements').css("filter", "blur(4px)");
+      } else {
+        $('.blurred-elements').css("filter", "");
+      }
+      flag++;
+    });
+    //when x button clicked => no blurr
+    $("#blurr-close").click(function() {
+      $('.blurred-elements').css("filter", "");
+      flag++;
+    });
+  </script>
+</body>
+
+</html>

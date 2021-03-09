@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> الفعاليات  </title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/0j8L4rYF/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+ 
+  .left-title {
+    background: rgb(216, 58, 136);
+    background: linear-gradient(157deg, rgba(216, 58, 136, 1) 0%, rgba(213, 60, 137, 1) 10%, rgba(100, 112, 172, 1) 92%);
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 150%;
+    font-weight: 500;
+    border-radius: 20px;
+    width: 50%;
+    height: 30%;
+    margin-left: 65%;
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2%;
+    
+  }
+
+  .events-container {
+    padding-top: 4%;
+  }
+
+  #achievements {
+    margin: auto;
+    background: rgb(216, 58, 136);
+    background: linear-gradient(157deg, rgba(216, 58, 136, 1) 0%, rgba(213, 60, 137, 1) 10%, rgba(100, 112, 172, 1) 92%);
+    width: 30%;
+    height: 10%;
+    border-radius: 13px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .Achivements {
+    padding-top: 10%;
+    display: flex;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+
+  .events-boxes {
+    background-color: #181947;
+    width: 100%;
+    height: 450px;
+    flex-wrap: nowrap;
+    float: right;
+    align-content: center;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .events-boxes-2 {
+    background-color: #201837;
+    background: linear-gradient(50deg, rgb(31, 0, 56) 10%, rgb(3, 17, 85) 92%);
+    width: 100%;
+    height: 300px;
+    float: right;
+    align-content: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .event-name {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-top: 6%;
+  }
+
+  .desc {
+    padding: 0px;
+    text-align: center;
+    font: cairo;
+    color: white;
+    font-size: 18px;
+  }
+
+  .num {
+    padding: 5px;
+    text-align: center;
+    font: cairo;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #comingEvents {
+    height: 300px;
+    width: 100%;
+    background-color: #1e002c;
+    background: linear-gradient(90deg, #450086 10%,#000936 92%);
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+
+  }
+
+  .events-container img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .modal-body {
+    background: rgba(32, 6, 91, 1);
+    border: none;
+  }
+
+  .modal-body button {
+    background-color: #DC4086;
+    color: white;
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    
+    right: 10px;
+    opacity: 100%;
+    height: 2.4rem;
+    width: 2.3rem;
+  }
+
+  .modal-body span {
+    font-size: 2.1rem;
+    text-align: center;
+    position: relative;
+    bottom: 4px;
+  }
+
+  .modal-body .first-pic {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-button {
+    background-color: #DC4086;
+    border: none;
+    color: white;
+    padding: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: cairo;
+    margin: 10%;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 50%;
+    outline: none;
+  }
+  .Reg-button {
+    background-color: #DC4086;
+    border: none;
+    color: white;
+    padding: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: cairo;
+    margin: 10%;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 50%;
+    outline: none;
+   
+    
+  }
+  
+  @media (max-width: 278px) {
+
+    
+    .header_logo {
+      width: 90%;
+    }
+
+    .left-title {
+      font-size: 70%;
+    }
+
+  }
+  
+  @media (min-width: 767.0px) and (max-width: 767.9px) {
+
+    .navbar-collapse .fa {
+      font-size: 0rem;
+    }
+
+    #tabs .nav-link {
+      width: 7rem;
+    }
+
+    .navbar-collapse .nav-link {
+      text-align: center;
+      position: relative;
+      top: -1rem;
+    }
+
+    footer .col-md-7 {
+      border-left: none;
+    }
+ 
+  }
+
+</style>
+
+<body onload="f()">
+  <header>
+    <div class="header">
+      <div class="container text-center d-none d-md-block d-xl-block d-lg-block blurred-elements">
+        <!-- large to md -->
+        <img class="header_pic d-inline-block align-top img-fluid" src="https://i.postimg.cc/P5CYZjpk/logos-header.png" />
+      </div>
+      <div class="container header_pic d-none d-sm-block d-md-none blurred-elements">
+        <!-- small -->
+        <div class="row text-center">
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/26cS2pvQ/club-logo.png" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-5">
+            <a href="#index"><img src="https://i.postimg.cc/90NzFDBw/club-name.png" class="img-fluid d-inline-block header_logo align-top" width="200" height="60"></a>
+          </div>
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/dtpDbT1z/ksu-logo.png" class="img-fluid d-inline-block header_logo align-top" width="50" height="60" /></a> <!-- better quality -->
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div class="container header_pic d-block d-sm-none blurred-elements">
+        <!-- extra small -->
+        <div class="row text-center" id="extra-small">
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/26cS2pvQ/club-logo.png" id="club-logo" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-5">
+            <a href="#index"><img src="https://i.postimg.cc/90NzFDBw/club-name.png" class="img-fluid d-inline-block header_logo align-top" width="200" height="60"></a>
+          </div>
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/dtpDbT1z/ksu-logo.png" class="img-fluid d-inline-block header_logo align-top" width="50" height="60" /></a> <!-- better quality -->
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div class="container header_pic blurred-elements" id="xxsmall">
+        <!-- extra small -->
+        <div class="row text-center">
+          <div class="col-11">
+            <a href="#index"><img src="https://i.postimg.cc/26cS2pvQ/club-logo.png" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-1">
+            
+          </div>
+        </div>
+      </div>
+      <div id="tabs">
+        <nav class="navbar navbar-expand-md navbar-light bg-custom text-center">
+          <a class="navbar-brand" href="#">
+          </a>
+          <button id="blurr" class="navbar-toggler nav-bar-button mr-auto float-left" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars" style="margin:10px;"></i></span>
+          </button>
+          <div class="collapse navbar-collapse bg-custom px-3 text-center" id="navbarCollapse">
+            <div class="close-btn">
+              <button id="blurr-close" class="navbar-toggler navbar-toggler-fa mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-times"></i></span>
+              </button>
+            </div>
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="index.html">الرئيسية</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" style="background-color: #EDEDED; color:#3E2960;" href="events.html">الفعاليات</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link achievements-link" href="achievements.html">الإنجازات</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="leaders.html">قادة&nbsp;النادي</a> <!-- for it to look right in Ar-->
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="Manshorat.html">المنشورات</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <main class="blurred-elements">
+    <!-- background for all website -->
+    <div id="bcground">
+      <!-- Achievments -->
+      <div class="container">
+        <div class="events-container">
+          <div class="left-title text-center" >الفعاليات الحالية</div>
+          <div class="container text-center">
+            <div class="row Achivements pt-4">
+              
+                <div class="col-md-4">
+                  <div id="comingEvents">
+                     
+                    <div>
+                        <img src="https://i.postimg.cc/5NTVKv3T/Logo-Taiar.png" style="width:100%;" alt="الفعالية" />
+                        <!--<h1> فعالية تيار </h1>-->
+                    <button type="button" class="Reg-button" data-target="#">
+                      تسجيل
+                    </button>
+                  </div>
+                  </div>
+                </div>
+                 <!-- <div class="events-boxes-2">
+                    <img src="https://i.postimg.cc/5NTVKv3T/Logo-Taiar.png" style="width:40%; height: 100px;" alt="الفعالية" />
+                    <div class="event-name">فعالية تيار</div>
+                    <div class="desc">ممكن وصف بسيط للفعالية؟</div>
+                    <button type="button" class="Reg-button" data-target="#">
+                      تسجيل
+                    </button>
+                  </div> -->
+                
+                
+             
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="events-container">
+          <div class="left-title text-center" id="previous-events">الفعاليات السابقة</div>
+          <div class="container text-center mt-4 mb-4">
+            <div class="row Achivements pt-4">
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img src="https://i.postimg.cc/qMK5GsHq/slide1.png" alt="لآلئ" />
+                  <div class="event-name">حفل لآلئ</div>
+                  <div class="desc">الحفل التعريفي للفصل الدراسي الثاني</div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#la2l2">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/PJsmf83V/Bnyat.jpg" alt="بنيات">
+                  <div class="event-name">حفل بنيات </div>
+                  <div class="desc">الحفل التعريفي للفصل الدراسي الأول </div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#Bnyat">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/QNQ7kCns/Cyber-Talks.jpg" alt="cyber-talks">
+                  <div class="event-name">Cyber Talks</div>
+                  <div class="desc">التعرف على الأمن السيبراني عن قرب واستعراض تطوره والمجالات العملية </div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#cyber-talks">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row Achivements pt-1">
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/yY6DmPZX/GameBox.jpg" alt="قيم بوكس">
+                  <div class="event-name">قيم بوكس</div>
+                  <div class="desc">
+                    ورشة تصميم الشخصيات
+                  </div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#game-box">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/wTP91ccB/Screen-Shot-2021-03-02-at-14-56-56.png" alt="digital stars">
+                  <div class="event-name">ديجتال ستارز</div>
+                  <div class="desc">تعزيز ثقافة الطلبة في مجال صناعة وتطوير الألعاب الالكترونية</div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#digital-stars">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/VvgB7kg7/ds22.jpg" alt="السعودية الرقمية">
+                  <div class="event-name">السعودية الرقمية</div>
+                  <div class="desc">تمكين وطن رقمي من خلال تعزيز ثقافة البحث والابتكار والتطوير في مجال التصنيع والإنتاج</div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#digital-saudi">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="row" class="Achivements pt-4">
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/mksBmdqZ/Global-Game.png" alt="GGJ" />
+                  <div class="event-name">Global Game Jam</div>
+                  <div class="desc">تنمية مهارة تطوير الألعاب من خلال تبادل الخبرات بين المتسابقات</div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#global-game">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="events-boxes">
+                  <img class="img-fluid" src="https://i.postimg.cc/XYgK48Cr/press-Start.jpg" alt="press start" width="600" height="400">
+                  <div class="event-name">Press Start</div>
+                  <div class="desc">جمع الشغوفات بعالم الألعاب بمكان واحد مليئ بروح الألفة والمنافسة</div>
+                  <button type="button" class="more-button" data-toggle="modal" data-target="#press-start">
+                    المزيد
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--background-->
+  </main>
+  <!-- la2l2 -->
+  <div class="modal fade" id="la2l2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/44bx8SkH/IMG-2864.jpg">
+              <div class="event-name text-center">حفل لآلئ</div>
+              <div class="desc mt-2">
+                <p>
+                  تعريف العضوات بالنادي ولجانه وفعالياته خلال هذا الفصل، وتهيأتهن للعمل في جو مليئ بالمودة والبهجة
+                  زرع قيم مهمة للعمل داخل أي فريق ومنها: الإحسان والسعي والتنافس الشريف والالتزام بالوقت؛ وذلك من خلال المسابقات المقدمة في الحفل
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/kXHG8tPT/IMG-2861.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/Y9dy07Lm/IMG-2856.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/fL0nGkrR/IMG-2862.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/44bx8SkH/IMG-2864.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bnyat -->
+  <div class="modal fade" id="Bnyat" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/PJsmf83V/Bnyat.jpg">
+              <div class="event-name text-center">حفل بنيات</div>
+              <div class="desc mt-2">
+                <p>حفل تعريفي وترفيهي، تضمن ما يلي:
+                  - الترحيب من قِبل قيادة النادي بكل العضوات المقبولات لهذا الفصل، والتعريف بالنادي عن قرب.
+                  - التعريف بعمل كل لجنة من لجان النادي وأفرقته، بشكل مختلف سواءً بعبارات جذابة أو مسابقات،
+                  وكان هذا من قبل قادة كل لجنة..
+                  - عرض جزء تشويقي لفيلم &quot;حجر أساس&quot; الذي يحكي عن قصة تأسيس النادي.
+                  - الحديث عن قصة تأسيس النادي وعضوات تركن آثارهن في النادي.
+                  - وقت للتعارف والتآلف بين العضوات من خلال المسابقات.
+                  - خُتم برؤية النادي لهذا الفصل وماذا سيقدم من فعاليات، مع التعريف بالفعاليات وحسابات النادي على
+                  مواقع التواصل، مع الشكر للحاضرات.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/ZKHFhH3C/IMG-2037.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/5tCCjSH5/IMG-2038.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/g0Xv8P7Z/IMG-2039.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/FzmcMkHy/IMG-2040.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- game box -->
+  <div class="modal fade" id="game-box" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/yY6DmPZX/GameBox.jpg">
+              <div class="event-name text-center">GameBox</div>
+              <div class="desc mt-2">
+                <p>أقيمت فعالية مسار المطورات بالتعاون مع المركز التدريبي التابع للشراكة الطلابية ، وهي فعالية تجمع بين
+                  التعلم والمتعة والتدريب والترفيه، وتضمن الفعالية عدة ورش لتطوير الألعاب وكانت أولى هذه الورش: ورشة
+                  الرسم وتكوين الشخصيات مع أ.أثير الكبير، التي تضمنت أساسيات تصميم الشخصيات واستيعاب النصوص
+                  واستنباط الشخصيات وتخيل الشخصيات وتحويلها إلى محتوى مرئي.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/SsmC5zsW/IMG-1575.jpg">
+              </div>
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/52H3qvYy/IMG-1589.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="https://i.postimg.cc/DzLPRTcK/IMG-1576.jpg">
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- digital-stars -->
+  <div class="modal fade" id="digital-stars" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/wTP91ccB/Screen-Shot-2021-03-02-at-14-56-56.png">
+              <div class="event-name text-center">Digital stars</div>
+              <div class="desc mt-2">
+                <p>الفعالية عبارة عن فعالية تعليمية وتنافسية في مجال تطوير الألعاب الإلكترونية على مستوى الجامعات الحكومية في منطقة الرياض, تقام تحت صرح جامعة الملك سعود- عمادة شؤون الطلاب - نادي العقول الرقمية التابع لكلية علوم الحاسب والمعلومات,
+                  حيث تقدم فعالية ديجيتال ستارت تدريب وتأهيل لكل فتاة شغوفة في مجال تطوير الألعاب من الصفر تحت أيدي العديد من الخبيرات وصولاً بها إلى مرحلة التنافس الفعلي المباشر تحت سقف واحد لمدة ثلاث أيام فقط وتسعى إلى تحقيق الرؤية الوطنية برفع
+                  جودة الحياة وإضفاء المتعة على الصرح التعليمي.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/c4c6tFBZ/p1.jpg">
+              </div>
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/PqCqcTsr/p2.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/Jz6nPtF2/p3.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/wjTMXDwN/p4.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- digital-saudi -->
+  <div class="modal fade" id="digital-saudi" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/DZhPTMC4/digital-Saudi.png">
+              <div class="event-name text-center">السعودية الرقمية</div>
+              <div class="desc mt-2">
+                <p>هي فعالية في جامعة لملك سعود تعكس رؤية الوطن وتقوم بعرض التحولات الرقمية التي تشهدها السعودية وتهدف إلى رفع الوعي بالخدمات الحكومية الرقمية المقدمة بالإضافة إلى استضافة نخبة من أهم المساهمين في التحول الرقمي للمملكة العربية
+                  السعودية والمختصين بالتقنية في شتى مجالاتها.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/bY3H7L1d/DS2.jpg">
+              </div>
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/RZn7nByn/ds3.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/VLvBmMFg/ds4.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/VvgB7kg7/ds22.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="https://i.postimg.cc/4yL6pNXp/SD1.jpg">
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- global game jam -->
+  <div class="modal fade" id="global-game" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/Wz28MHgc/IMG-2872.jpg">
+              <div class="event-name text-center">
+                Global Game Jam
+              </div>
+              <div class="desc mt-2">
+                <p>فعالية تنافسية تنادي كل من لديها الرغبة في تشارك الخبرات، والشغف والإبداع في مجال تطوير الألعاب، عن طريق إنشاء أكبر حدث عالمي لإنشاء الألعاب يتخطى حدود المكان ليصل إلى أنحاء العالم. بالإضافة لوجود رعاة عالميين. هذا سباق يتطلب من المتسابقات تصميم لعبة جديدة وتطويرها واختبارها وصنعها في غضون ٤٨ ساعة بناءً على فكرة معينة يتم تحديدها مسبقًا من قبل لجنة GGJ.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/6pDhH3n0/IMG-2874.jpg">
+              </div>
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/m2pjHVrK/IMG-2873.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/CxtcWJTb/IMG-2871.jpg">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/c1mXsdGx/IMG-3008.jpg">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="https://i.postimg.cc/XJ6QvJvJ/IMG-3007.jpg">
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Press Start -->
+  <div class="modal fade" id="press-start" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="container-fluid">
+            <div class="row first-pic">
+              <img class="img-fluid" src="https://i.postimg.cc/HkVHWzS6/Screen-Shot-2021-02-27-at-21-23-23.png">
+              <div class="event-name text-center">
+                Press Start
+              </div>
+              <div class="desc mt-2">
+                <p>حدث ترفيهي؛ يعمل على تحقيق الرؤية الوطنية برفع جودة الحياة، في رحلة لا تنتهي من الشغف والحماس.
+                  يقدم مجموعة من الأنشطة في مجال الألعاب الترفيهية الإلكترونية والحية، بطولات وتحديات بين اللاعبات، ومطورات الألعاب.
+                  </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 padding-3">
+                <img class="img-fluid d-none d-md-block d-xl-block d-lg-block" src="https://i.postimg.cc/nhgxXmgp/Screen-Shot-2021-02-27-at-21-23-34.png">
+              </div>
+              <div class="col-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/HkVHWzS6/Screen-Shot-2021-02-27-at-21-23-23.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/Pxkk4jd7/Screen-Shot-2021-02-27-at-21-23-46.png">
+              </div>
+              <div class="col-md-6 padding-3">
+                <img class="img-fluid" src="https://i.postimg.cc/3Nt5Y02M/Screen-Shot-2021-02-27-at-21-23-58.png">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="">
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- cyber-talks -->
+    <div class="modal fade" id="cyber-talks" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="container-fluid">
+              <div class="row first-pic">
+                <img class="img-fluid" src="https://i.postimg.cc/QNQ7kCns/Cyber-Talks.jpg">
+                <div class="event-name text-center">
+                  Cyber Talks
+                </div>
+                <div class="desc mt-2">
+                  <p>فعالية تثقيفية في مجال أمن السيبراني، تقام تحت مظلة جامعة الملك سعود –وكالة عمادة شؤون الطلاب
+                    لشؤون الطالبات –نادي العقول الرقمية التابع لكلية علوم الحاسب والمعلومات.
+                    هدفت إلى استعراض مفاهيم حول الأمن السيبراني وأهميته، ورفع درجة الوعي بمخاطر الاختراقات
+                    الإلكترونية وتوضيح كيفية الحماية منها.
+                    واُقيمت الفاعلية خلال يومين؛ ففي اليوم الأول
+                    عُرضت محاضرة تتطرق لمواضيع مختلفة حول الأمن السيبراني، وفي اليوم الثاني أُقيمَ ويبنار الأمن
+                    السيبراني الذي طُرِح فيه أهم المجالات العملية في تخصص الأمن السيبراني والدور المهم لمتخصصيه
+                    ووظائهم، وقدمت الفعالية من طالبات متخصصات في هذا المجال، كما تضمنت الفعالية مساحة تفعالية طُرِحت
+                    بها النقاشات والمسابقات.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 padding-3">
+                  <img class="img-fluid" src="https://i.postimg.cc/gkj5QxLF/IMG-2223.jpg">
+                </div>
+                <div class="col-6 padding-3">
+                  <img class="img-fluid" src="https://i.postimg.cc/0QJb6xcH/IMG-2224.jpg">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 padding-3">
+                  <img class="img-fluid" src="https://i.postimg.cc/sXqyhhvp/IMG-2225.jpg">
+                </div>
+                <div class="col-md-6 padding-3">
+                  <img class="img-fluid" src="https://i.postimg.cc/k5q2XPmC/IMG-2230.jpg">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid" src="https://i.postimg.cc/wvHjBJR3/IMG-2232.jpg">
+                </div>
+                <div class="col-md-3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container footer blurred-elements" id="footer">
+        <div class="row">
+          <div class="col-md-7">
+            <img class="socialIcons" src="assets/img/location-pin.svg">
+            الرياض - جامعة الملك سعود - كلية علوم الحاسب و تقنية المعلومات
+          </div>
+          <div class="col-md-5">
+            <h6>للتواصل معنا</h6>
+            <div class="socialIcons">
+              <a href="https://twitter.com/ksu_itclub?lang=ar"><img class="img-fluid" src="assets/img/squaretwitter.svg"></a>
+              <a href="https://www.linkedin.com/company/digital-minds-club-نادي-العقول-الرقمية/?originalSubdomain=sa"><img class="img-fluid" src="assets/img/linkedin-box.svg"></a>
+              <a href="https://www.instagram.com/ksu_itclub/r"><img class="img-fluid" src="assets/img/social-instagram.svg"></a>
+              <a href="mailto:digital.minds.ksu@gmail.com"><img class="img-fluid" src="assets/img/reademail.svg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      var flag = 1;
+      //when button clicked 1st time => blurr, 2nd time => no blurr
+      $("#blurr").click(function() {
+        if (flag % 2 != 0) {
+          $('.blurred-elements').css("filter", "blur(4px)");
+        } else {
+          $('.blurred-elements').css("filter", "");
+        }
+        flag++;
+      });
+      //when x button clicked => no blurr
+      $("#blurr-close").click(function() {
+        $('.blurred-elements').css("filter", "");
+        flag++;
+      });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> قادة النادي </title>
+  <link rel="shortcut icon" href="https://i.postimg.cc/0j8L4rYF/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  
+  .top-logos {
+    background: #201837;
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 3%;
+    position: relative;
+    top: 7%;
+  }
+
+  .logo.gg {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    right: -10px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 50%;
+  }
+
+  .team-content {
+    height: auto;
+    width: auto;
+    display: block;
+    background-color: #201837;
+    border-radius: 20px;
+    color: white;
+    font-family: cairo;
+  }
+
+  .manager-content {
+    height: auto;
+    width: auto;
+    display: block;
+    background-color: #201837;
+    border-radius: 20px;
+    color: white;
+    font-family: Cairo;
+  }
+
+  
+</style>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="container text-center d-none d-md-block d-xl-block d-lg-block blurred-elements">
+        <!-- large to md -->
+        <img class="header_pic d-inline-block align-top img-fluid" src="https://i.postimg.cc/P5CYZjpk/logos-header.png" />
+      </div>
+      <div class="container header_pic d-none d-sm-block d-md-none blurred-elements">
+        <!-- small -->
+        <div class="row text-center">
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/0j8L4rYF/favicon.png" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-5">
+            <a href="#index"><img src="https://i.postimg.cc/90NzFDBw/club-name.png" class="img-fluid d-inline-block header_logo align-top" width="200" height="60"></a>
+          </div>
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/dtpDbT1z/ksu-logo.png" class="img-fluid d-inline-block header_logo align-top" width="50" height="60" /></a> <!-- better quality -->
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div class="container header_pic d-block d-sm-none blurred-elements">
+        <!-- extra small -->
+        <div class="row text-center" id="extra-small">
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/0j8L4rYF/favicon.png" id="club-logo" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-5">
+            <a href="#index"><img src="https://i.postimg.cc/90NzFDBw/club-name.png" class="img-fluid d-inline-block header_logo align-top" width="200" height="60"></a>
+          </div>
+          <div class="col-3">
+            <a href="#index"><img src="https://i.postimg.cc/dtpDbT1z/ksu-logo.png" class="img-fluid d-inline-block header_logo align-top" width="50" height="60" /></a> <!-- better quality -->
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div class="container header_pic blurred-elements" id="xxsmall">
+        <!-- extra small -->
+        <div class="row text-center">
+          <div class="col-11">
+            <a href="#index"><img src="https://i.postimg.cc/0j8L4rYF/favicon.png" class="img-fluid d-inline-block header_logo align-top" width="60" height="60"></a>
+          </div>
+          <div class="col-1">
+          </div>
+        </div>
+      </div>
+      <div id="tabs">
+        <nav class="navbar navbar-expand-md navbar-light bg-custom text-center">
+          <a class="navbar-brand" href="#">
+          </a>
+          <button id="blurr" class="navbar-toggler nav-bar-button mr-auto float-left" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse bg-custom px-3 text-center" id="navbarCollapse">
+            <div class="close-btn">
+              <button id="blurr-close" class="navbar-toggler navbar-toggler-fa mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-times"></i></span>
+              </button>
+            </div>
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="index.html">الرئيسية</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link " href="events.html">الفعاليات</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link achievements-link" href="achievements.html">الإنجازات</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="leaders.html" style="background-color: #EDEDED; color:#3E2960;">قادة&nbsp;النادي</a> <!-- for it to look right in Ar-->
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="underline">
+                  <a class="nav-link" href="Manshorat.html">المنشورات</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <main class="blurred-elements">
+    <!-- background for all website -->
+    <div id="bcground">
+      <div class="container">
+        <!-- first block -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/0j8L4rYF/favicon.png">
+            </div>
+            <div class="manager-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>مها البراك</h4>
+                  <p>رئيسة النادي</p>
+                  <h4>مرام الغامدي</h4>
+                  <p>المساعد الإداري لشؤون اللجان</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>نورة الحسينان</h4>
+                  <p>المساعد الإداري لشؤون الفرق</p>
+                  <h4>غيداء العطية</h4>
+                  <p>المساعد الإداري لشؤون الفعاليات</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="row">
+          <!-- لجنة الموارد -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/YSjQr5gh/IMG-1989.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>وئام المطوع</h4>
+                  <p>قائدة لجنة الموارد والجودة</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>مها الجاسر</h4>
+                  <p>نائبة لجنة الموارد والجودة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- علاقات -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/QtT55cfD/IMG-2002.png">>
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>رؤى الماضي</h4>
+                  <p>قائدة لجنة العلاقات العامة</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>العنود الصبار</h4>
+                  <p>نائبة لجنة العلاقات العامة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third row -->
+        <div class="row">
+          <!-- لجنة المحتوى -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/65LrYLt5/IMG-1998.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>فاطمة الشمري</h4>
+                  <p>قائدة لجنة إعداد المحتوى</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>شهد الرسيني</h4>
+                  <p>نائبة لجنة إعداد المحتوى</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- الابتكار -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/524wGY25/IMG-1991.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>العنود اليوسف</h4>
+                  <p>قائدة لجنة الإبتكار</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>سارة الزهراني</h4>
+                  <p>نائبة لجنة الإبتكار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fourth row -->
+        <div class="row">
+          <!-- المالية -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/g058ngq4/IMG-1999.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>نوف آل عسكر</h4>
+                  <p>قائدة لجنة المالية</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>مها العزيزي</h4>
+                  <p>نائبة لجنة المالية</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- المنصات -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/J0CXQtFk/IMG-2003.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>أسيل البسام</h4>
+                  <p>قائدة فريق المنصات الرقمية</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>شوق الهزاني</h4>
+                  <p>نائبة فريق المنصات الرقمية</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fifth row -->
+        <div class="row">
+          <!-- التصوير -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/QtT55cfD/IMG-2002.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>فيّ اللحيده</h4>
+                  <p>قائدة فريق التصوير والمونتاج</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>إيناس شافعي</h4>
+                  <p>نائبة فريق التصوير والمونتاج</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- اعلام -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/mgmQGLPv/IMG-1992.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>عبير العبدالكريم</h4>
+                  <p>قائدة فريق الإعلام الرقمي</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>بشائر الحصار</h4>
+                  <p>نائبة فريق الإعلام الرقمي</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sixth row -->
+        <div class="row">
+          <!-- التصميم -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/tCHd3m0M/IMG-1995.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>لجين اليحيى</h4>
+                  <p>قائدة فريق التصميم</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>هديل الغدير</h4>
+                  <p>نائبة فريق التصميم</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- game jam -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo gg" src="https://i.postimg.cc/T1jDNf8H/Global-Games.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>منال الشاطري</h4>
+                  <p>Global Game Jam قائدة</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>رملة المسلم</h4>
+                  <p>Global Game Jam نائبة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- seventh row -->
+        <div class="row">
+          <!-- تيار -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/5NTVKv3T/Logo-Taiar.png">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>سارة المالكي</h4>
+                  <p>قائدة تيار</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>مشاعل الهبدان</h4>
+                  <p>نائبة تيار</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- press start -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/XYgK48Cr/press-Start.jpg">
+            </div>
+            <div class="team-content">
+              <div class="row text-center">
+                <div class="col-md-6 mt-4">
+                  <h4>ديمة المطيري</h4>
+                  <p>Press Start قائدة</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                  <h4>رنيم الناجم</h4>
+                  <p>Press Start نائبة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- eigth row -->
+        <div class="row">
+          <div class="col-md-3">
+          </div>
+          <!-- game box -->
+          <div class="col-md-6">
+            <div class="top-logos">
+              <img class="logo" src="https://i.postimg.cc/WpZ6JcyZ/GameBox.png">
+            </div>
+            <div class="team-content p-3">
+              <div class="text-center">
+                <h4>إسراء الحسن</h4>
+                <p>Game Box قائدة</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+        <!--container-->
+      </div>
+      <!--background-->
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer blurred-elements" id="footer">
+      <div class="row">
+        <div class="col-md-7">
+          <img class="socialIcons" src="assets/img/location-pin.svg">
+          الرياض - جامعة الملك سعود - كلية علوم الحاسب و تقنية المعلومات
+        </div>
+        <div class="col-md-5">
+          <h6>للتواصل معنا</h6>
+          <div class="socialIcons">
+            <a href="https://twitter.com/ksu_itclub?lang=ar"><img class="img-fluid" src="assets/img/squaretwitter.svg"></a>
+            <a href="https://www.linkedin.com/company/digital-minds-club-نادي-العقول-الرقمية/?originalSubdomain=sa"><img class="img-fluid" src="assets/img/linkedin-box.svg"></a>
+            <a href="https://www.instagram.com/ksu_itclub/r"><img class="img-fluid" src="assets/img/social-instagram.svg"></a>
+            <a href="mailto:digital.minds.ksu@gmail.com"><img class="img-fluid" src="assets/img/reademail.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script>
+    var flag = 1;
+    //when button clicked 1st time => blurr, 2nd time => no blurr
+    $("#blurr").click(function() {
+      if (flag % 2 != 0) {
+        $('.blurred-elements').css("filter", "blur(4px)");
+      } else {
+        $('.blurred-elements').css("filter", "");
+      }
+      flag++;
+    });
+    //when x button clicked => no blurr
+    $("#blurr-close").click(function() {
+      $('.blurred-elements').css("filter", "");
+      flag++;
+    });
+  </script>
+</body>
+
+</html>
